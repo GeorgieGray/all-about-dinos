@@ -1,61 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@300;400&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
+
 body {
     font-family: Ubuntu, sans-serif;
     font-weight: 400;
     color: #2F4F4F; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
 }
-a:visited, a:hover, a:focus {
+main {
+    max-width: 1390px;
+    width: 100%;
+}
+footer {
+    height: 150px;
+    width: 100%;
+}
+header {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+header nav {
+    display: none;
+}
+
+
+
+header h1 {
+    margin: 10px 20px;
+}
+
+
+.link:hover, .link:focus {
     text-decoration: none;
-    color: rgb(173, 171, 33);
+    color: greenyellow;
 }
+
 .selection {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     grid-template-rows: masonry;
   }
-
-h1, h2 {
-font-family: Ubuntu ,sans-serif;
-letter-spacing:5px;
-color: blue;
-}
-#menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-}
-#menu {
-    display: flex;
-    float: right;
-    list-style-type: none;
-    margin-right: 30px;
-    line-height: 75px;
-    letter-spacing: 2px;
-}
-#menu a {
-    text-decoration: none;
-    color: inherit;
-}
-#menu a:hover {
-    color: greenyellow;
-}
-
-
 .dinosaurs {
     display: grid;
     grid-template-columns: 1fr;
-
+    padding-top: 10vw;
+    width: 100%
 }
 
 .dinosaur {
     width: 100%;
-    height: 300px;
+    height: 600px;
     border: 1px solid black;
 }
 
@@ -71,38 +71,125 @@ color: blue;
     grid-column: 1 / 3;
     background-color: orange;
 }
-#types {
+types {
+    display: flex;
     padding-top: 30px;
-    float: left;
+    flex-direction: row;
 }
 #when {
+    display: flex;
     padding-top: 30px;
-    float:right 
 }
 #where {
-
+    display: flex;
 }
-footer {
-    height: 150px;
 
-}
 .social-networks {
     text-align: center;
 }
 .social-networks >li {
     display: inline;
 }
+.menu-icon {
+    width: 100%;
+    background: white;
+    height: 2px;
+    display: block;
+    position: relative;
+
+}
+.menu-icon::before,.menu-icon::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background: white;
+    height: 2px;
+    position: absolute;
+}
+.menu-icon::before {
+    top: 5px;
+}
+.menu-icon::after {
+    top: -5px;
+}
+.menu-icon-container {
+    width: 50px;
+}
+.menu-icon-click {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+header input[type="checkbox"] {
+    display: none;
+}
+header input[type="checkbox"]:checked + nav {
+    display: block;
+}
+header label {
+    display: block;
+    width: 30px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .dinosaurs {
         grid-template-columns: 1fr 1fr;
     }
+    
+    header nav {
+        flex: 1;
+        padding-right: 20px;
+        display: block;
+    }
+    header nav ul {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        column-gap: 20px;
+        text-decoration: none;
+        color: inherit;
+        list-style-type: none;
+    }
+    header nav ul li:first-of-type {
+        margin-left: auto;
+    }
 
+    header label {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1280px) {
     .dinosaurs {
         grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+    header nav {
+        flex: 1;
+        padding-right: 20px;
+        display: block;
+    }
+    header nav ul {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        column-gap: 20px;
+        text-decoration: none;
+        color: inherit;
+        list-style-type: none;
+    }
+    header nav ul li:first-of-type {
+        margin-left: auto;
+      
+    }
+    header label {
+        display: none;
     }
 }
 
