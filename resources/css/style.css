@@ -79,6 +79,10 @@ header h1 {
     overflow: hidden;
     text-decoration: none;
 }
+.image:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
 
 .dinosaur:visited,.dinosaur:hover,.dinosaur:active {
     text-decoration: none;
@@ -130,9 +134,6 @@ header h1 {
     color: black;
 }
 
-
-
-
 .editorial h2 {
     font-size: 32px;
     line-height: 36px;
@@ -168,8 +169,8 @@ header h1 {
     height: 2px;
     display: block;
     position: relative;
-
 }
+
 .menu-icon::before,.menu-icon::after {
     content: "";
     display: block;
@@ -177,6 +178,7 @@ header h1 {
     background: white;
     height: 2px;
     position: absolute;
+    transition: transform 0.3s, top 0.3s;
 }
 .menu-icon::before {
     top: 5px;
@@ -196,12 +198,25 @@ header h1 {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 header input[type="checkbox"] {
     display: none;
 }
 header input[type="checkbox"]:checked + nav {
     display: block;
+}
+header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon {
+    background: transparent;
+}
+header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon::before {
+   transform: rotate(45deg);
+   top: 0;
+}
+header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
 }
 header label {
     display: block;
@@ -224,11 +239,33 @@ header label {
     aspect-ratio: 16 / 9;
 
 }
+nav {
+    position: fixed;
+    background-color: gray;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 70px 30px;
+    font-size: 32px;
+}
+nav .link {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .dinosaurs {
         grid-template-columns: 1fr 1fr;
     }
+    
 
     .dinosaur.first {
         grid-column: 1 / 3;
@@ -236,8 +273,13 @@ header label {
     
     header nav {
         flex: 1;
-        padding-right: 20px;
         display: block;
+        position: initial;
+        padding: 0;
+        padding-right: 20px;
+        font-size: 16px;
+        background-color: transparent;
+
     }
     header nav ul {
         width: 100%;
@@ -247,6 +289,10 @@ header label {
         text-decoration: none;
         color: inherit;
         list-style-type: none;
+        flex-direction: row;
+    }
+    nav .link {
+        color: #2F4F4F
     }
     header nav ul li:first-of-type {
         margin-left: auto;
@@ -284,8 +330,12 @@ header label {
 
     header nav {
         flex: 1;
+         display: block;
+        position: initial;
+        padding: 0;
         padding-right: 20px;
-        display: block;
+        font-size: 16px;
+        background-color: transparent;
     }
     header nav ul {
         width: 100%;
@@ -295,6 +345,10 @@ header label {
         text-decoration: none;
         color: inherit;
         list-style-type: none;
+        flex-direction: row;
+    }
+    nav .link {
+        color: #2F4F4F;
     }
     header nav ul li:first-of-type {
         margin-left: auto;

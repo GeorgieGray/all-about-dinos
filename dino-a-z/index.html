@@ -7,65 +7,243 @@
     <meta name="description" content="Dinosaur history website for kids">
     <meta name="keywords" content="dinosaurs, history, children, learning">
 
-    <link rel="stylesheet" href="/dino-facts/style.css">
-    <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="/resources/css/reset.css">
+    <link rel="stylesheet" href="/dino-a-z/style.css">
     <script src="https://kit.fontawesome.com/0bd0623f13.js" crossorigin="anonymous"></script>
 
 
-    <title>A-Z!</title>
+
+    <title>All About Dinos</title>
 </head>
 
 <body>
     <header>
-        <a href="/dino-a-z/index.html">
+        <a href="index.html">
             <h1 id=>All About Dinos</h1>
         </a>
+        <input id="menu-icon-state" type="checkbox" />
         <nav>
-            <ul id="menu">
+            <ul>
                 <li>
-                    <a href="/index.html">Home</a>
+                    <a class="link" href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="/dino-a-z/index.html">A-Z</a>
+                    <a class="link" href="dino-a-z/index.html">A-Z</a>
                 </li>
                 <li>
-                    <a href="/dino-facts/index.html">Dino Facts</a>
+                    <a class="link" href="dino-facts/index.html">Dino Facts</a>
                 </li>
             </ul>
         </nav>
-            <ul>
+        <label id="menu-icon-state" for="menu-icon-state">
+            <div class="menu-icon-click">
+                <span class="menu-icon"></span>
+            </div>
+        </label>
+    </header>
+    <main>
+        <section class="dinosaurs">
+            <a href="/dino/tyrannosaurus" class="dinosaur first">
+                <div class="dino-image-container">
+                    <img src="/images/tyrannosaurus.jpg" class="image" />
+                </div>
+                <div class="info">
+                    <h2>Tyrannosaurus</h2>
+                    <p>
+                        Learn more
+                    </p>
+                </div>
+            </a>
+            <a class="dinosaur second">
+                <div class="dino-image-container">
+                    <img src="/images/velociraptor.jpg" class="image" />
+                </div>
+                <div class="info">
+                    <h2>Velociraptor</h2>
+                    <p>
+                        Learn more
+                    </p>
+                </div>
+            </a>
+            <a class="dinosaur third">
+                <div class="dino-image-container">
+                    <img src="/images/iguanodon.jfif" class="image" />
+                </div>
+                <div class="info">
+                    <h2>Iguanodon</h2>
+                    <p>
+                        Learn more
+                    </p>
+                </div>
+            </a>
+            <a class="dinosaur fourth">
+                <div class="dino-image-container">
+                    <img src="/images/brontosaurus.jpg" class="image" />
+                </div>
+                <div class="info">
+                    <h2>Brontosaurus</h2>
+                    <p>
+                        Learn more
+                    </p>
+                </div>
+            </a>
+            <a class="dinosaur fifth">
+                <div class="dino-image-container">
+                    <img src="/images/spinosaurus.jpg" class="image" />
+                </div>
+                <div class="info">
+                    <h2>Spinosaurus</h2>
+                    <p>
+                        Learn more
+                    </p>
+                </div>
+            </a>
+            <a class="dinosaur sixth">
+                <div class="dino-image-container">
+                    <img src="/images/allosaurus.jpg" class="image" />
+                </div>
+                <div class="info">
+                    <h2>Allosaurus</h2>
+                    <p>
+                        Learn more
+                    </p>
+                </div>
+            </a>
+        </section>
+        <a class="dinosaur seventh">
+            <div class="dino-image-container">
+                <img src="/images/anchisaurus.jpg" class="image" />
+            </div>
+            <div class="info">
+                <h2>Anchisaurus</h2>
+                <p>
+                    Learn more
+                </p>
+            </div>
+        </a>
+        <a class="dinosaur eighth">
+            <div class="dino-image-container">
+                <img src="/images/Apatosaurus.jpg" class="image" />
+            </div>
+            <div class="info">
+                <h2>Apatosaurus</h2>
+                <p>
+                    Learn more
+                </p>
+            </div>
+        </a>
+        <a class="dinosaur ninth">
+            <div class="dino-image-container">
+                <img src="/images/dracorex.jpg" class="image" />
+            </div>
+            <div class="info">
+                <h2>Dracorex</h2>
+                <p>
+                    Learn more
+                </p>
+            </div>
+        </a>
+        <a class="dinosaur tenth">
+            <div class="dino-image-container">
+                <img src="/images/microraptor.jpg" class="image" />
+            </div>
+            <div class="info">
+                <h2>Microraptor</h2>
+                <p>
+                    Learn more
+                </p>
+            </div>
+        </a>
+        <a class="dinosaur eleventh">
+            <div class="dino-image-container">
+                <img src="/images/parasaurolophus.jpg" class="image" />
+            </div>
+            <div class="info">
+                <h2>Parasaurolophus</h2>
+                <p>
+                    Learn more
+                </p>
+            </div>
+        </a>
+        <a class="dinosaur twelveth">
+            <div class="dino-image-container">
+                <img src="/images/stegosaurus.jpg" class="image" />
+            </div>
+            <div class="info">
+                <h2>Stegosaurus</h2>
+                <p>
+                    Learn more
+                </p>
+            </div>
+        </a>
+        <a class="dinosaur thirtheenth">
+            <div class="dino-image-container">
+                <img src="/images/triceratops.jpg" class="image" />
+            </div>
+            <div class="info">
+                <h2>Triceratops</h2>
+                <p>
+                    Learn more
+                </p>
+            </div>
+        </a>
+        <a class="dinosaur fourtheenth">
+            <div class="dino-image-container">
+                <img src="/images/woolly mammoth.jpg" class="image" />
+            </div>
+            <div class="info">
+                <h2>Woolly mammoth</h2>
+                <p>
+                    Learn more
+                </p>
+            </div>
+        </a>
+        
+    </main>
+    <footer>
+        <div class="content">
+            <ul class="footer-links">
                 <li>
-                    <a href="#">Check out museums</a>
+                    <a class="link" href="https://facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (opens in a new tab)">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>
+                            Facebook
+                        </span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Contact Us</a>
+                    <a class="link" href="https://instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Insta page (opens in a new tab)">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>
+                            Instagram
+                        </span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Additional resources</a>
+                    <a class="link" href="https://twitter.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Twitter page (opens in a new tab)">
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>
+                            Twitter
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="https://youtube.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Youtube page (opens in a new tab)">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>
+                            Youtube
+                        </span>
+                    </a>
                 </li>
             </ul>
-          </body>
+        </div>
+    </footer>
+</body>
 
-            <footer>
-                <ul class="social-networks">
-                    <li>
-                        <a href="https://facebook.com" target="_blank" rel="noopener"
-                            aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com" target="_blank" rel="noopener"
-                            aria-label="Visit our Insta page (opens in a new tab)"><i class="fa-brands fa-instagram"></i>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com" target="_blank" rel="noopener"
-                            aria-label="Visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i>
-                    </li>
-                    <li>
-                        <a href="https://youtube.com" target="_blank" rel="noopener"
-                            aria-label="Visit our Youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i>
-                    </li>
-                </ul>
 
-        </footer>
-        
-        </html>
+
+</html>

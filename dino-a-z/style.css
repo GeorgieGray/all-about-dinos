@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300;400&display=swap');
+
+
+body {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    color: #2F4F4F; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+}
+main {
+    max-width: 1390px;
+    width: 100%;
+}
+footer {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+footer .content {
+    max-width: 1390px;
+    width: 100%;
+    padding: 50px 20px 20px;
+
+}
+footer .content .footer-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+}
+footer .content .footer-links a {
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+header nav {
+    display: none;
+}
+
+header h1 {
+    margin: 10px 20px;
+}
+
+.video {
+    display: flex;
+    
+}
+
+.link:hover, .link:focus {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.selection {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-rows: masonry;
+  }
+.dinosaurs {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 5px;
+}
+
+.dinosaur {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    overflow: hidden;
+    text-decoration: none;
+}
+.image:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.dinosaur:visited,.dinosaur:hover,.dinosaur:active {
+    text-decoration: none;
+    color: black;
+}
+
+.dinosaur.first .image {
+    width: 100%;
+}
+
+
+.dinosaur.second .image {
+    width: 100%;
+    margin-top: -25%;
+}
+
+.dinosaur.third .image {
+    width: 100%;
+    margin-top: -25%;
+}
+
+.dinosaur.fourth .image {
+    width: 100%;
+    margin-top: -25%;
+}
+
+.dinosaur.fifth .image {
+    height: 100%;
+    margin-top: -25%;
+}
+.dinosaur.sixth .image {
+    height: 100%;
+    margin-top: -25%;
+}
+.dinosaur.seventh .image {
+    height: 100%;
+    margin-top: -25%;
+}
+.dinosaur.eigth .image {
+    height: 100%;
+    margin-top: -25%;
+}
+.dinosaur.ninth .image {
+    height: 100%;
+    margin-top: -25%;
+}
+.dinosaur.tenth .image {
+    height: 100%;
+    margin-top: -25%;
+}
+.dinosaur.eleventh .image {
+    height: 100%;
+    margin-top: -25%;
+}
+.dinosaur.twelveth .image {
+    height: 100%;
+    margin-top: -25%;
+}
+.dinosaur.thirtheenth .image {
+    height: 100%;
+    margin-top: -25%;
+}
+.dinosaur.forthteenth .image {
+    height: 100%;
+    margin-top: -25%;
+}
+
+
+.dino-image-container {
+    overflow: hidden;
+}
+
+.dinosaur .info {
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.dinosaur .info h2 {
+    font-size: 30px;
+    color: black;
+}
+
+.dinosaur .info p {
+    justify-self: flex-end;
+    margin-top: auto;
+    text-decoration: underline;
+    color: black;
+}
+
+.editorial h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 20px;
+
+}
+.editorial h3 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.editorial strong {
+    font-weight: bold;
+}
+
+.editorial p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 32px;
+
+}
+
+.editorial {
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.menu-icon {
+    width: 100%;
+    background: white;
+    height: 2px;
+    display: block;
+    position: relative;
+}
+
+.menu-icon::before,.menu-icon::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background: white;
+    height: 2px;
+    position: absolute;
+    transition: transform 0.3s, top 0.3s;
+}
+.menu-icon::before {
+    top: 5px;
+}
+
+.menu-icon::after {
+    top: -5px;
+
+}
+.menu-icon-container {
+    width: 50px;
+}
+.menu-icon-click {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+header input[type="checkbox"] {
+    display: none;
+}
+header input[type="checkbox"]:checked + nav {
+    display: block;
+}
+header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon {
+    background: transparent;
+}
+header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon::before {
+   transform: rotate(45deg);
+   top: 0;
+}
+header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+header label {
+    display: block;
+    width: 30px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pangea {
+    width: 100%;
+}
+
+.video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+}
+nav {
+    position: fixed;
+    background-color: gray;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 70px 30px;
+    font-size: 32px;
+}
+nav .link {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .dinosaurs {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+    .dinosaur.first {
+        grid-column: 1 / 3;
+    }
+    
+    header nav {
+        flex: 1;
+        display: block;
+        position: initial;
+        padding: 0;
+        padding-right: 20px;
+        font-size: 16px;
+        background-color: transparent;
+
+    }
+    header nav ul {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        column-gap: 20px;
+        text-decoration: none;
+        color: inherit;
+        list-style-type: none;
+        flex-direction: row;
+    }
+    nav .link {
+        color: #2F4F4F
+    }
+    header nav ul li:first-of-type {
+        margin-left: auto;
+    }
+
+    header label {
+        display: none;
+    }
+
+    .dinosaur.first .image {
+        margin-top: -10%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .dinosaurs {
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+    .dinosaur.first {
+        grid-column: 1 / 3;
+        grid-template-rows: 1fr;
+    }
+    .dinosaur.first .image {
+        margin-top: -10%;
+    }
+
+    .dinosaur.first .info {
+        margin-top: -100px;
+        background: none;
+    }
+    .dinosaur.first .info h2, .dinosaur.first .info p {
+        color: white;
+    }
+
+    header nav {
+        flex: 1;
+         display: block;
+        position: initial;
+        padding: 0;
+        padding-right: 20px;
+        font-size: 16px;
+        background-color: transparent;
+    }
+    header nav ul {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        column-gap: 20px;
+        text-decoration: none;
+        color: inherit;
+        list-style-type: none;
+        flex-direction: row;
+    }
+    nav .link {
+        color: #2F4F4F;
+    }
+    header nav ul li:first-of-type {
+        margin-left: auto;
+      
+    }
+    header label {
+        display: none;
+    }
+    
+}
+
+
+
