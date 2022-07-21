@@ -1,0 +1,30 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pangea {
+    width: 100%;
+    max-width: 600px; 
+}
+
+.video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: flex;
+}
+
+@media screen and (min-width: 1280px) {
+    .dinosaur.first {
+        grid-column: 1 / 3;
+        grid-template-rows: 1fr;
+    }
+
+    .dinosaur.first .info {
+        margin-top: -100px;
+        background: none;
+    }
+    .dinosaur.first .info h2, .dinosaur.first .info p {
+        color: white;
+    }
+}
