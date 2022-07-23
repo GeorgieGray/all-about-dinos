@@ -1,46 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@300;400&display=swap');
 
+:root {
+    --primary: #84a98c;
+    --secondary: #52796f;
+    --tertiary: #dad7cd;
+    --text: #2f3e46;
+    --text-hover: #52796f;
+    --white: #fff;
+}
 
 body {
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    color: #2F4F4F; 
+    color: var(--text);
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 300px;
+    color: var(--text);
 }
+
 main {
     max-width: 1390px;
     width: 100%;
     padding: 0 5px;
+    padding-bottom: 5px;
+    background: var(--white);
 }
+
+.dino-logo {
+    padding: 5px 20px;
+    width: 100px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--secondary);
+}
+
+a:active {
+    color: var(--text-hover);
+}
+
+a>h1 {
+    color: var(--text);
+}
+
+
 footer {
     width: 100%;
-    background-color: red;
+    background-color: var(--primary);
     display: flex;
     justify-content: center;
 }
+
 footer .content {
     max-width: 1390px;
     width: 100%;
     padding: 50px 20px 20px;
 
 }
+
 footer .content .footer-links {
     display: flex;
     flex-direction: column;
     row-gap: 9px;
 }
+
 footer .content .footer-links a {
     text-decoration: none;
+    margin-bottom: 2px;
+    display: inline-block;
 }
+
 header {
     width: 100%;
-    background-color: red;
+    background-color: var(--primary);
     display: flex;
     align-items: center;
 }
+
 header nav {
     display: none;
 }
@@ -49,10 +89,15 @@ header h1 {
     margin: 10px 20px;
 }
 
+.link {
+    color: var(--text);
+}
 
-.link:hover, .link:focus {
+
+.link:hover,
+.link:focus {
     text-decoration: none;
-    color: greenyellow;
+    color: var(--text-hover);
 }
 
 .dinosaurs {
@@ -71,14 +116,22 @@ header h1 {
     text-decoration: none;
     cursor: pointer;
 }
-.image:hover {
+
+.dinosaur:hover .image {
     transform: scale(1.1);
     transition: transform 0.3s;
 }
 
-.dinosaur:visited,.dinosaur:hover,.dinosaur:active {
+.dinosaur:hover .info p {
+    color: var(--text-hover);
     text-decoration: none;
-    color: black;
+}
+
+.dinosaur:visited,
+.dinosaur:hover,
+.dinosaur:active {
+    text-decoration: none;
+    color: var(--text);
 }
 
 .dino-image-container {
@@ -86,7 +139,7 @@ header h1 {
 }
 
 .dinosaur .info {
-    background: white;
+    background: var(--white);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -96,14 +149,14 @@ header h1 {
 
 .dinosaur .info h2 {
     font-size: 30px;
-    color: black;
+    color: var(--text);
 }
 
 .dinosaur .info p {
     justify-self: flex-end;
     margin-top: auto;
     text-decoration: underline;
-    color: black;
+    color: var(--text);
 }
 
 .editorial h2 {
@@ -112,11 +165,12 @@ header h1 {
     margin-bottom: 20px;
 
 }
+
 .editorial h3 {
     font-size: 26px;
     line-height: 30px;
     margin-bottom: 20px;
-    
+
 }
 
 .editorial strong {
@@ -137,32 +191,36 @@ header h1 {
 
 .menu-icon {
     width: 100%;
-    background: white;
+    background: var(--white);
     height: 2px;
     display: block;
     position: relative;
 }
 
-.menu-icon::before,.menu-icon::after {
+.menu-icon::before,
+.menu-icon::after {
     content: "";
     display: block;
     width: 100%;
-    background: white;
+    background: var(--white);
     height: 2px;
     position: absolute;
     transition: transform 0.3s, top 0.3s;
 }
+
 .menu-icon::before {
-    top: 5px;
+    top: 7px;
 }
 
 .menu-icon::after {
-    top: -5px;
+    top: -7px;
 
 }
+
 .menu-icon-container {
     width: 50px;
 }
+
 .menu-icon-click {
     height: 100%;
     width: 100%;
@@ -173,23 +231,29 @@ header h1 {
     position: relative;
     z-index: 12;
 }
+
 header input[type="checkbox"] {
     display: none;
 }
-header input[type="checkbox"]:checked + nav {
+
+header input[type="checkbox"]:checked+nav {
     display: block;
 }
-header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon {
+
+header input[type="checkbox"]:checked~#menu-icon-state .menu-icon {
     background: transparent;
 }
-header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon::before {
-   transform: rotate(45deg);
-   top: 0;
+
+header input[type="checkbox"]:checked~#menu-icon-state .menu-icon::before {
+    transform: rotate(45deg);
+    top: 0;
 }
-header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon::after {
+
+header input[type="checkbox"]:checked~#menu-icon-state .menu-icon::after {
     transform: rotate(-45deg);
     top: 0;
 }
+
 header label {
     display: block;
     width: 30px;
@@ -200,7 +264,7 @@ header label {
 
 nav {
     position: fixed;
-    background-color: gray;
+    background-color: var(--secondary);
     top: 0;
     left: 0;
     right: 0;
@@ -209,8 +273,14 @@ nav {
     font-size: 32px;
     z-index: 11;
 }
+
 nav .link {
-    color: white;
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav .link:hover {
+    color: var(--tertiary);
 }
 
 nav ul {
@@ -223,27 +293,69 @@ nav ul {
     width: 100%;
 }
 
+.social-media {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.heading::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    margin-right: 8px;
+    height: 28px;
+    background-image: url(/all-about-dinos/resources/images/footprint.png);
+    background-size: cover;
+}
+
+.heading-small::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    margin-right: 6px;
+    height: 20px;
+    background-image: url(/all-about-dinos/resources/images/footprint.png);
+    background-size: cover;
+}
+
+.mobile {
+    display: grid;
+}
+
+.not-mobile {
+    display: none;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .mobile {
+        display: none;
+    }
+
+    .not-mobile {
+        display: grid;
+    }
+
     .dinosaurs {
         grid-template-columns: 1fr 1fr;
     }
-    
+
 
     .dinosaur.first {
         grid-column: 1 / 3;
     }
-    
+
     header nav {
         flex: 1;
         display: block;
         position: initial;
         padding: 0;
         padding-right: 20px;
-        font-size: 16px;
+        font-size: 20px;
         background-color: transparent;
 
     }
+
     header nav ul {
         width: 100%;
         display: flex;
@@ -254,11 +366,17 @@ nav ul {
         list-style-type: none;
         flex-direction: row;
     }
+
     nav .link {
-        color: #2F4F4F
+        color: var(--white);
     }
+
+    nav .link:hover {
+        color: var(--tertiary);
+    }
+
     header nav ul li:first-of-type {
-        margin-left: auto;
+        margin-left: 30px;
     }
 
     header label {
@@ -267,10 +385,19 @@ nav ul {
 }
 
 @media screen and (min-width: 1280px) {
+    .mobile {
+        display: none;
+    }
+
+    .not-mobile {
+        display: grid;
+    }
+
     .dinosaurs {
         grid-template-columns: 1fr 1fr 1fr;
-    
+
     }
+
     .dinosaur.first {
         grid-column: 1 / 3;
         grid-template-rows: 1fr;
@@ -281,19 +408,26 @@ nav ul {
         background: none;
         z-index: 10;
     }
-    .dinosaur.first .info h2, .dinosaur.first .info p {
-        color: white;
+
+    .dinosaur.first .info h2,
+    .dinosaur.first .info p {
+        color: var(--white);
     }
 
     header nav {
         flex: 1;
-         display: block;
+        display: block;
         position: initial;
         padding: 0;
         padding-right: 20px;
-        font-size: 16px;
+        font-size: 20px;
         background-color: transparent;
     }
+
+    header nav a {
+        text-decoration: none;
+    }
+
     header nav ul {
         width: 100%;
         display: flex;
@@ -304,16 +438,21 @@ nav ul {
         list-style-type: none;
         flex-direction: row;
     }
+
     nav .link {
-        color: #2F4F4F;
+        color: var(--white);
     }
+
+    nav .link:hover {
+        color: var(--tertiary);
+    }
+
     header nav ul li:first-of-type {
-        margin-left: auto;
-      
+        margin-left: 30px;
     }
+
     header label {
         display: none;
     }
-    
-}
 
+}

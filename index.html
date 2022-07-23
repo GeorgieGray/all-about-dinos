@@ -9,10 +9,11 @@
 
     <link rel="stylesheet" href="/all-about-dinos/resources/css/reset.css">
     <link rel="stylesheet" href="/all-about-dinos/resources/css/main.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/all-about-dinos/style.css">
     <script src="https://kit.fontawesome.com/0bd0623f13.js" crossorigin="anonymous"></script>
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 
     <title>All About Dinos</title>
 </head>
@@ -20,7 +21,7 @@
 <body>
     <header>
         <a href="/all-about-dinos">
-            <h1 id=>All About Dinos</h1>
+            <img class="dino-logo" src="/all-about-dinos/resources/images/dino-logo.png"/>
         </a>
         <input id="menu-icon-state" type="checkbox" />
         <nav>
@@ -29,7 +30,7 @@
                     <a class="link" href="/all-about-dinos/">Home</a>
                 </li>
                 <li>
-                    <a class="link" href="/all-about-dinos/dino-a-z">A-Z</a>
+                    <a class="link" href="/all-about-dinos/dino-a-z">Dinosaurs</a>
                 </li>
             </ul>
         </nav>
@@ -41,8 +42,17 @@
     </header>
     <main>
         <section class="dinosaurs">
-            <a href="/all-about-dinos/dino/tyrannosaurus-rex" class="dinosaur first">
+            <a href="/all-about-dinos/dino/tyrannosaurus-rex" class="dinosaur first not-mobile">
                 <img src="/all-about-dinos/resources/images/hero-tyrannosaurus.png" class="image" />
+                <div class="info">
+                    <h2>Tyrannosaurus Rex</h2>
+                    <p>
+                        Learn more
+                    </p>
+                </div>
+            </a>
+            <a href="/all-about-dinos/dino/tyrannosaurus-rex" class="dinosaur first mobile">
+                <img src="/all-about-dinos/resources/images/tyrannosaurus.png" class="image" />
                 <div class="info">
                     <h2>Tyrannosaurus Rex</h2>
                     <p>
@@ -90,7 +100,7 @@
         <section>
             <div class="editorial">
                 <div>
-                    <h2>Types of Dinosaurs</h2>
+                    <h2 class="heading">Types of Dinosaurs</h2>
                     <p>
                         There are thousands of different types of dinosaur species that have been found worldwide.
                         Dinosaurs can be carnivores, herbivores, and omnivores. meaning they eat meat , fruit & veg or a
@@ -116,7 +126,7 @@
             </div>
             <div class="editorial">
                 <div>
-                    <h2>When did they exist</h2>
+                    <h2 class="heading">When did they exist</h2>
                     <p>
                         When did dinosaurs start and end?
                         Dinosaurs lived during most of the Mesozoic era, a geological age that lasted from 252 million
@@ -149,7 +159,7 @@
                 </div>
             </div>
             <div class="editorial">
-                <h2>Where did they live</h2>
+                <h2 class="heading">Where did they live</h2>
                 <p>The earliest dinosaurs originated and diverged in what is now South America before trekking across
                     the globe. Dinosaurs went on to live all of the continents. At the beginning of the age of dinosaurs
                     (during the Triassic Period, about 230 million years ago), the continents were arranged together as
@@ -163,7 +173,7 @@
         </section>
 
         <section class="editorial">
-            <h2>What happened to all the dinosuars?</h2>
+            <h2 class="heading">What happened to all the dinosuars?</h2>
             <iframe class="video" src="https://www.youtube.com/embed/dFCbJmgeHmA" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -173,6 +183,9 @@
     <footer>
         <div class="content">
             <ul class="footer-links">
+                <li class="social-media">
+                    Social
+                </li>
                 <li>
                     <a class="link" href="https://facebook.com" target="_blank" rel="noopener"
                         aria-label="Visit our Facebook page (opens in a new tab)">
