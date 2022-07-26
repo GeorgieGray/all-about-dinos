@@ -53,19 +53,21 @@ footer {
     background-color: var(--primary);
     display: flex;
     justify-content: center;
+    font-size: 32px;
 }
 
 footer .content {
     max-width: 1390px;
     width: 100%;
     padding: 50px 20px 20px;
-
+    display: flex;
+    justify-content: center;
 }
 
 footer .content .footer-links {
     display: flex;
-    flex-direction: column;
-    row-gap: 9px;
+    flex-direction: row;
+    column-gap: 30px;
 }
 
 footer .content .footer-links a {
