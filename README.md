@@ -301,6 +301,16 @@ https://github.com/GeorgieGray/all-about-dinos/actions
 
 #### Lighthouse
 
+I used the Lighthouse performance, accessibility, best practices and SEO tests to test and tune my website.
+
+##### Desktop
+![desktop lighthouse result](https://i.imgur.com/aFQvQsY.gif)  
+Apparently if you get all 100s, you get fireworks.
+
+##### Mobile
+![mobile lighthouse result](https://i.gyazo.com/49f14c96e3004fc4da3bf9b38576e65b.png)  
+Mobile has more strict thresholds since generally the devices are less powerful and have a worse internet connection than desktop devices.
+
 ## Content
 
 ### Editorial
