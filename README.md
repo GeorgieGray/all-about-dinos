@@ -26,6 +26,7 @@ https://georgiegray.github.io/all-about-dinos/
 - [User Stories](#user-stories)
 - [Features](#features)
 - [Technology](#technology)
+- [Project Structure](#project-structure)
 - [Design](#design)
   - [Colour Pallette](#colour-pallette)
   - [Typography](#typography)
@@ -105,7 +106,7 @@ https://georgiegray.github.io/all-about-dinos/
 ### Header/navigation bar
 - Website logo which can be clicked to return to the home page
 - Primary navigation links to the home page and the dinosaur index
-- Mobile-friendly navigation menu, hidden behind hamburger icon
+- Mobile-friendly navigation menu, hidden behind hamburger icon. The text is much larger to make it easier to use via touch controls on a small screen.
 
 ![header1](https://i.gyazo.com/8a9f06706a8ebed7bb137e45e49ea3b0.png)  
 ![header2](https://i.imgur.com/j7VvhjO.gif)
@@ -179,21 +180,113 @@ As the viewport size shrinks, the mosaic arranges itself to make best use of the
 
 ### Dinosaur Facts Newsletter
 
+TODO
+
 #### Sign-up form
+
+TODO
 
 #### Thank you page
 
+TODO
+
 ## Technology
+
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+
+This project has no libraries or other code dependencies. All code is my own.
+
+## Project Structure
+
+### Resources
+
+There is a folder in the root `/resources` which is the home for all non-html files.
+
+This folder contains two child folders:
+- `/resources/css`: All CSS files, for every page
+- `/resources/images`: Images used across the website
+
+### Page structure (HTML files)
+
+All HTML files live in a folder bearing the name of that page, the HTML files themselves and are named `index.html`. Most web servers understand `index.html` to be the default file to display when a folder is requested, and we can use this to our advantage to create more user-friendly URL structures without exposing technical details like the file type.
+
+For example `/all-about-dinos/dinosaur.html` can instead be `/all-about-dinos/dinosaur`.
+
+Having our pages in a folder structure lets us communicate the relationship or hierarchy of pages within our website. This allows us to produce easier to read, more memorable, intuitive, SEO friend semantic URLs. These convey the meaning of the page within the context of the website hierarchy.
+
+For example `/all-about-dinos/iguanodon.html` can instead be `/all-about-dinos/dinosaur/iguanodon`. The iguanodon is a dinosaur, this is now conveyed by our URL structure. The list of all dinosaurs is available one-level up at `/all-about-dinos/dinosaur`. As the user navigates through the site and explores into a particular area, the URL structure behaves sort of like a breadcrumb. The breadcrumb makes it clear to the user when they have gone one-level deeper or one-level higher in the site hierarchy, or even if they have switched context completely to another part of the website.
+
+In the next section, I'll explain what each folder is for.
+
+#### Root `/`
+
+The root contains the home page, the root of the website.
+
+#### Dinosaur list `/dinosaur`
+
+The dinosaur section of the website, including a list of all dinosaurs.
+
+#### Dinosaur profile `/dinosaur/{dinosaur-name}`
+
+The individual profile page of a dinosaur.
+
+#### Facts newsletter sign-up `/facts`
+
+The form to sign up for the dino facts newsletter
+
+#### Facts newsletter thank you `/facts/thank-you`
+
+The thank you page for a new newsletter subscriber
 
 ## Design
 
 ### Colour Pallette
 
+Green is a thematic colour for dinosaurs. You will often see in media related to dinosaurs an abundance of green due to the fauna and overgrowth of the environments they inhabited. The shades of green were selected with the intention of adding flavour without distracting from the content.
+
+The tertiary colour is not green, but instead is complimentary to the other colours in the pallette. It pops when placed with them as the background.
+
+![pallette](https://i.imgur.com/o3pAJEh.png)
+
 ### Typography
+
+I chose [Quicksand](https://github.com/andrew-paglinawan/QuicksandFamily) by [Andrew Paglinawan](https://andrewpaglinawan.com/). The font is distributed using [Google Fonts](https://fonts.google.com/specimen/Quicksand).
+
+When choosing a font I looked for the following criteria:
+- Fun or playful
+- Easy to read
+
+Quicksand belongs to the sans-serif family. [This article](https://www.adobe.com/creativecloud/design/discover/serif-vs-sans-serif.html) by Adobe makes an argument for why you might choose a sans-serif font over a serif one. [This article](https://www.impactplus.com/blog/sans-serif-vs-serif-font-which-should-you-use-when#:~:text=Sans%20Serif%20Fonts%20Say%20Modern%2C%20Approachable%2C%20and%20Clean&text=The%20clean%2C%20crisp%20lines%20of,which%20increases%20legibility%20for%20users.) by impactplus.com says much of the same, but makes a stronger argument for sans-serif being the family of choice for on-screen text, and for ease of reading.
+
+![sample image](https://i.gyazo.com/24f9d8ba1815d11e98f07ac18253c8eb.png)
 
 ## Local Development
 
+You will need `npm`, 5.2 or later.
+
+To run the project locally:
+1. Clone this GitHub repo
+2. It should be cloned into a folder called `all-about-dinos`
+3. From **outside** the folder, run: `npx serve`
+4. Open a web browser at: `http://localhost:3000/all-about-dinos`
+
+I've setup the local development environment this way so that paths match the structure from the GitHub pages hosted version. This is important because it provides you with additional confidence that something which works locally will work the same once it's deployed.
+
+Example:
+### Github Pages
+> https://georgiegray.github.io/all-about-dinos/dinosaur/iguanodon/
+
+### Local
+> http://localhost:3000/all-about-dinos/dinosaur/iguanodon/
+
 ## Deployment
+Deployment is automated using GitHub pages.
+
+Each time a commit is pushed to the `master` branch of the repository at `https://github.com/GeorgieGray/all-about-dinos`, the change is automatically detected and immediately deployed using [GitHub Actions](https://github.com/features/actions).
+
+You can see the deployment history here:  
+https://github.com/GeorgieGray/all-about-dinos/actions
 
 ## Testing
 

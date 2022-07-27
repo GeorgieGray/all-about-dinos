@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dinosaur history website for kids">
+    <meta name="keywords" content="dinosaurs, history, children, learning">
+
+    <link rel="stylesheet" href="/all-about-dinos/resources/css/reset.css">
+    <link rel="stylesheet" href="/all-about-dinos/resources/css/main.css">
+    <link rel="stylesheet" href="/all-about-dinos/resources/css/facts.css">
+    <script src="https://kit.fontawesome.com/0bd0623f13.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+    <title>All About Dinos</title>
+</head>
+
+<body>
+    <header>
+        <a href="/all-about-dinos">
+            <img class="dino-logo" src="/all-about-dinos/resources/images/dino-logo.png" />
+        </a>
+        <input id="menu-icon-state" type="checkbox" />
+        <nav>
+            <ul>
+                <li>
+                    <a class="link" href="/all-about-dinos/">Home</a>
+                </li>
+                <li>
+                    <a class="link" href="/all-about-dinos/dinosaur">Dinosaurs</a>
+                </li>
+                <li>
+                    <a class="link" href="/all-about-dinos/facts">Facts</a>
+                </li>
+            </ul>
+        </nav>
+        <label id="menu-icon-state" for="menu-icon-state">
+            <div class="menu-icon-click">
+                <span class="menu-icon"></span>
+            </div>
+        </label>
+    </header>
+    <main>
+        <h1>Dino Facts Newsletter</h1>
+        <p>
+            Love dinosaurs? You'll love this. Each fortnite we'll send you a super interesting collection of DINO FACTS!
+        </p>
+        <p>
+            Enter your details below and get learning more about the wild world of dinosaurs.
+        </p>
+        <form class="sign-up" action="/all-about-dinos/facts/thank-you" method="POST">
+            <label for="first-name">
+                First Name
+            </label>
+            <input type="text" id="first-name" required placeholder="Enter first name">
+            <label for="last-name">
+                Last Name
+            </label>
+            <input type="text" id="last-name" required placeholder="Enter last name">
+            <label for="email">
+                Email
+            </label>
+            <input type="email" id="email" required placeholder="Enter email">
+            <input type="submit" value="send" class="send-button">
+        </form>
+    </main>
+    <footer>
+        <div class="content">
+            <ul class="footer-links">
+                <li>
+                    <a class="link" href="https://facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (opens in a new tab)">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="https://instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Insta page (opens in a new tab)">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="https://twitter.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Twitter page (opens in a new tab)">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="https://youtube.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Youtube page (opens in a new tab)">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+
+
+</html>
