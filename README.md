@@ -200,9 +200,9 @@ This project has no libraries or other code dependencies. All code is my own.
 
 ## Project Structure
 
-### Resources
+### Assets
 
-There is a folder in the root `/resources` which is the home for all non-html files.
+There is a folder in the root `/assets` which is the home for all non-html files.
 
 This folder contains two child folders:
 - `/assets/css`: All CSS files, for every page
