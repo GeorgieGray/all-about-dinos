@@ -121,8 +121,7 @@ header h1 {
 }
 
 .dinosaur:hover .image {
-    transform: scale(1.1);
-    transition: transform 0.3s;
+    transform: scale(1.03);
 }
 
 .dinosaur:hover .info p {
@@ -294,6 +293,8 @@ nav ul {
 
 .dinosaur .image {
     width: 100%;
+    transform: scale(1);
+    transition: transform 0.3s;
 }
 
 .social-media {
