@@ -236,9 +236,9 @@ The individual profile page of a dinosaur.
 
 The form to sign up for the dino facts newsletter
 
-#### Facts newsletter thank you `/facts/thank-you`
+#### Facts newsletter thank you `/facts/thank-you.html`
 
-The thank you page for a new newsletter subscriber
+The thank you page for a new newsletter subscriber. This is the only exception to project structure, the forms `action` attribute must have the .html file extension for GitHub Pages throws a 405 error.
 
 ## Design
 
@@ -296,6 +296,13 @@ https://github.com/GeorgieGray/all-about-dinos/actions
 ### Third-party
 
 #### W3C HTML Valdiator
+Each page type has been validated using the W3C Nu HTML Checker. There are no errors, please find the results below.
+
+- Home: https://validator.w3.org/nu/?doc=https%3A%2F%2Fgeorgiegray.github.io%2Fall-about-dinos
+- Dinosaur index: https://validator.w3.org/nu/?doc=https%3A%2F%2Fgeorgiegray.github.io%2Fall-about-dinos%2Fdinosaur
+- Dinosaur profile: https://georgiegray.github.io/all-about-dinos/dinosaur/triceratops
+- Facts newsletter form: https://validator.w3.org/nu/?doc=https%3A%2F%2Fgeorgiegray.github.io%2Fall-about-dinos%2Ffacts%2F
+
 
 #### W3C CSS Validator
 

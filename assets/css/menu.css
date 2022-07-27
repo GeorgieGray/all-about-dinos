@@ -1,0 +1,68 @@
+/*
+  CSS-only mobile menu
+  Inspired by: https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
+*/
+
+.menu-icon {
+  width: 100%;
+  background: var(--white);
+  height: 2px;
+  display: block;
+  position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background: var(--white);
+  height: 2px;
+  position: absolute;
+  transition: transform 0.3s, top 0.3s;
+}
+
+.menu-icon::before {
+  top: 7px;
+}
+
+.menu-icon::after {
+  top: -7px;
+}
+
+.menu-icon-container {
+  width: 50px;
+}
+
+.menu-icon-click {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 12;
+}
+
+header input[type="checkbox"] {
+  display: none;
+}
+
+header input[type="checkbox"]:checked + nav {
+  display: block;
+}
+
+header input[type="checkbox"]:checked ~ #menu-icon .menu-icon {
+  background: transparent;
+}
+
+header input[type="checkbox"]:checked ~ #menu-icon .menu-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+header input[type="checkbox"]:checked ~ #menu-icon .menu-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
