@@ -7,6 +7,7 @@
   --text: #2f3e46;
   --text-hover: #52796f;
   --white: #fff;
+  --black: #000;
 }
 
 body {
@@ -238,16 +239,16 @@ header input[type="checkbox"]:checked + nav {
   display: block;
 }
 
-header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon {
+header input[type="checkbox"]:checked ~ #menu-icon .menu-icon {
   background: transparent;
 }
 
-header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon::before {
+header input[type="checkbox"]:checked ~ #menu-icon .menu-icon::before {
   transform: rotate(45deg);
   top: 0;
 }
 
-header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon::after {
+header input[type="checkbox"]:checked ~ #menu-icon .menu-icon::after {
   transform: rotate(-45deg);
   top: 0;
 }
@@ -273,12 +274,13 @@ nav {
 }
 
 nav .link {
-  color: var(--white);
+  color: var(--black);
   text-decoration: none;
 }
 
 nav .link:hover {
-  color: var(--tertiary);
+  color: var(--black);
+  text-decoration: underline;
 }
 
 nav ul {
@@ -366,11 +368,12 @@ nav ul {
   }
 
   nav .link {
-    color: var(--white);
+    color: var(--black);
   }
 
   nav .link:hover {
-    color: var(--tertiary);
+    color: var(--black);
+    text-decoration: underline;
   }
 
   header nav ul li:first-of-type {
@@ -437,11 +440,12 @@ nav ul {
   }
 
   nav .link {
-    color: var(--white);
+    color: var(--black);
   }
 
   nav .link:hover {
-    color: var(--tertiary);
+    color: var(--black);
+    text-decoration: underline;
   }
 
   header nav ul li:first-of-type {
