@@ -305,7 +305,7 @@ nav ul {
   width: 28px;
   margin-right: 8px;
   height: 28px;
-  background-image: url(/all-about-dinos/resources/images/footprint.png);
+  background-image: url(/all-about-dinos/assets/images/footprint.png);
   background-size: cover;
 }
 
@@ -315,7 +315,7 @@ nav ul {
   width: 20px;
   margin-right: 6px;
   height: 20px;
-  background-image: url(/all-about-dinos/resources/images/footprint.png);
+  background-image: url(/all-about-dinos/assets/images/footprint.png);
   background-size: cover;
 }
 

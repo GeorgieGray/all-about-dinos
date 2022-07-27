@@ -205,8 +205,8 @@ This project has no libraries or other code dependencies. All code is my own.
 There is a folder in the root `/resources` which is the home for all non-html files.
 
 This folder contains two child folders:
-- `/resources/css`: All CSS files, for every page
-- `/resources/images`: Images used across the website
+- `/assets/css`: All CSS files, for every page
+- `/assets/images`: Images used across the website
 
 ### Page structure (HTML files)
 
