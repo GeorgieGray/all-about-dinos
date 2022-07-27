@@ -23,7 +23,7 @@ input {
   width: auto;
   text-transform: uppercase;
   border-radius: 4px;
-  color: var(--white);
+  color: var(--black);
   cursor: pointer;
 }
 
