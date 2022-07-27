@@ -1,6 +1,6 @@
 # All About Dinos
 
-![devices](https://i.imgur.com/ZK3XJXr.png)
+![devices](https://i.imgur.com/6dBgRra.png)
 
 [All About Dinos](https://georgiegray.github.io/all-about-dinos/) is an educational website about dinosaur history, intended for children. It provides a jumping-off point for children to begin learning about dinosaurs.
 
