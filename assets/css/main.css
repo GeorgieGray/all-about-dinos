@@ -146,7 +146,6 @@ header h1 {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  display: relative;
   z-index: 2;
 }
 
