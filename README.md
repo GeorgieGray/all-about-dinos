@@ -160,6 +160,7 @@ As the viewport size shrinks, the mosaic arranges itself to make best use of the
 - An explanation of how the dinosaurs came to their demise
 - Youtube video by popular education channel: Kurzgesagt
 - The channel provides factual information but conveys it using a fun and playful art style, making it approachable for children.
+  
 ![end](https://i.gyazo.com/888b36c738c597d338acfb668c9394f8.png)
 
 ### Dinosaur Index
