@@ -1,459 +1,454 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300;400&display=swap");
 
 :root {
-    --primary: #84a98c;
-    --secondary: #52796f;
-    --tertiary: #dad7cd;
-    --text: #2f3e46;
-    --text-hover: #52796f;
-    --white: #fff;
+  --primary: #84a98c;
+  --secondary: #52796f;
+  --tertiary: #dad7cd;
+  --text: #2f3e46;
+  --text-hover: #52796f;
+  --white: #fff;
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    color: var(--text);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 300px;
-    color: var(--text);
-    min-height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  color: var(--text);
+  min-height: 100vh;
 }
 
 main {
-    max-width: 1390px;
-    width: 100%;
-    padding: 0 5px;
-    padding-bottom: 5px;
-    background: var(--white);
+  max-width: 1390px;
+  width: 100%;
+  padding: 0 5px;
+  padding-bottom: 5px;
+  background: var(--white);
 }
 
 .dino-logo {
-    padding: 5px 20px;
-    width: 100px;
+  padding: 5px 20px;
+  width: 100px;
 }
 
 h1,
 h2,
 h3 {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
 a:active {
-    color: var(--text-hover);
+  color: var(--text-hover);
 }
 
 a > h1 {
-    color: var(--text);
+  color: var(--text);
 }
 
 footer {
-    width: 100%;
-    background-color: var(--primary);
-    display: flex;
-    justify-content: center;
-    font-size: 32px;
-    justify-self: flex-end;
-    margin-top: auto;
+  width: 100%;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  justify-self: flex-end;
+  margin-top: auto;
 }
 
 footer .content {
-    max-width: 1390px;
-    width: 100%;
-    padding: 50px 20px 20px;
-    display: flex;
-    justify-content: center;
+  max-width: 1390px;
+  width: 100%;
+  padding: 50px 20px 20px;
+  display: flex;
+  justify-content: center;
 }
 
 footer .content .footer-links {
-    display: flex;
-    flex-direction: row;
-    column-gap: 30px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
 }
 
 footer .content .footer-links a {
-    text-decoration: none;
-    margin-bottom: 2px;
-    display: inline-block;
+  text-decoration: none;
+  margin-bottom: 2px;
+  display: inline-block;
 }
 
 header {
-    width: 100%;
-    background-color: var(--primary);
-    display: flex;
-    align-items: center;
+  width: 100%;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
 }
 
 header nav {
-    display: none;
+  display: none;
 }
 
 header h1 {
-    margin: 10px 20px;
+  margin: 10px 20px;
 }
 
 .link {
-    color: var(--text);
+  color: var(--text);
 }
 
 .link:hover,
 .link:focus {
-    text-decoration: none;
-    color: var(--text-hover);
+  text-decoration: none;
+  color: var(--text-hover);
 }
 
 .dinosaurs {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    gap: 5px;
-    margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 5px;
+  margin-top: 5px;
 }
 
 .dinosaur {
-    width: 100%;
-    display: grid;
-    grid-template-rows: 3fr 100px;
-    overflow: hidden;
-    text-decoration: none;
-    cursor: pointer;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 3fr 100px;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .dinosaur:hover .image {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .dinosaur:hover .info p {
-    color: var(--text-hover);
-    text-decoration: none;
+  color: var(--text-hover);
+  text-decoration: none;
 }
 
 .dinosaur:visited,
 .dinosaur:hover,
 .dinosaur:active {
-    text-decoration: none;
-    color: var(--text);
+  text-decoration: none;
+  color: var(--text);
 }
 
 .dino-image-container {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .dinosaur .info {
-    background: var(--white);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    display: relative;
-    z-index: 2;
+  background: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  display: relative;
+  z-index: 2;
 }
 
 .dinosaur .info h2 {
-    font-size: 30px;
-    color: var(--text);
+  font-size: 30px;
+  color: var(--text);
 }
 
 .dinosaur .info p {
-    justify-self: flex-end;
-    margin-top: auto;
-    text-decoration: underline;
-    color: var(--text);
+  justify-self: flex-end;
+  margin-top: auto;
+  text-decoration: underline;
+  color: var(--text);
 }
 
 .editorial h2 {
-    font-size: 32px;
-    line-height: 36px;
-    margin-bottom: 20px;
-
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 20px;
 }
 
 .editorial h3 {
-    font-size: 26px;
-    line-height: 30px;
-    margin-bottom: 20px;
-
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 
 .editorial strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .editorial p {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 32px;
-
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 32px;
 }
 
 .editorial {
-    margin: 40px 0;
-    padding: 0 20px;
+  margin: 40px 0;
+  padding: 0 20px;
 }
 
 .menu-icon {
-    width: 100%;
-    background: var(--white);
-    height: 2px;
-    display: block;
-    position: relative;
+  width: 100%;
+  background: var(--white);
+  height: 2px;
+  display: block;
+  position: relative;
 }
 
 .menu-icon::before,
 .menu-icon::after {
-    content: "";
-    display: block;
-    width: 100%;
-    background: var(--white);
-    height: 2px;
-    position: absolute;
-    transition: transform 0.3s, top 0.3s;
+  content: "";
+  display: block;
+  width: 100%;
+  background: var(--white);
+  height: 2px;
+  position: absolute;
+  transition: transform 0.3s, top 0.3s;
 }
 
 .menu-icon::before {
-    top: 7px;
+  top: 7px;
 }
 
 .menu-icon::after {
-    top: -7px;
-
+  top: -7px;
 }
 
 .menu-icon-container {
-    width: 50px;
+  width: 50px;
 }
 
 .menu-icon-click {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: relative;
-    z-index: 12;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 12;
 }
 
 header input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
-header input[type="checkbox"]:checked+nav {
-    display: block;
+header input[type="checkbox"]:checked + nav {
+  display: block;
 }
 
-header input[type="checkbox"]:checked~#menu-icon-state .menu-icon {
-    background: transparent;
+header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon {
+  background: transparent;
 }
 
-header input[type="checkbox"]:checked~#menu-icon-state .menu-icon::before {
-    transform: rotate(45deg);
-    top: 0;
+header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon::before {
+  transform: rotate(45deg);
+  top: 0;
 }
 
-header input[type="checkbox"]:checked~#menu-icon-state .menu-icon::after {
-    transform: rotate(-45deg);
-    top: 0;
+header input[type="checkbox"]:checked ~ #menu-icon-state .menu-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
 }
 
 header label {
-    display: block;
-    width: 30px;
-    height: 20px;
-    margin-left: auto;
-    margin-right: 20px;
+  display: block;
+  width: 30px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 nav {
-    position: fixed;
-    background-color: var(--secondary);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 70px 30px;
-    font-size: 32px;
-    z-index: 11;
+  position: fixed;
+  background-color: var(--secondary);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 70px 30px;
+  font-size: 32px;
+  z-index: 11;
 }
 
 nav .link {
-    color: var(--white);
-    text-decoration: none;
+  color: var(--white);
+  text-decoration: none;
 }
 
 nav .link:hover {
-    color: var(--tertiary);
+  color: var(--tertiary);
 }
 
 nav ul {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .dinosaur .image {
-    width: 100%;
-    transform: scale(1);
-    transition: transform 0.3s;
+  width: 100%;
+  transform: scale(1);
+  transition: transform 0.3s;
 }
 
 .social-media {
-    font-weight: bold;
-    margin-bottom: 8px;
-    font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 18px;
 }
 
 .heading::before {
-    content: '';
-    display: inline-block;
-    width: 28px;
-    margin-right: 8px;
-    height: 28px;
-    background-image: url(/all-about-dinos/resources/images/footprint.png);
-    background-size: cover;
+  content: "";
+  display: inline-block;
+  width: 28px;
+  margin-right: 8px;
+  height: 28px;
+  background-image: url(/all-about-dinos/resources/images/footprint.png);
+  background-size: cover;
 }
 
 .heading-small::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    margin-right: 6px;
-    height: 20px;
-    background-image: url(/all-about-dinos/resources/images/footprint.png);
-    background-size: cover;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  margin-right: 6px;
+  height: 20px;
+  background-image: url(/all-about-dinos/resources/images/footprint.png);
+  background-size: cover;
 }
 
 .mobile {
-    display: grid;
+  display: grid;
 }
 
 .not-mobile {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-    .mobile {
-        display: none;
-    }
+  .mobile {
+    display: none;
+  }
 
-    .not-mobile {
-        display: grid;
-    }
+  .not-mobile {
+    display: grid;
+  }
 
-    .dinosaurs {
-        grid-template-columns: 1fr 1fr;
-    }
+  .dinosaurs {
+    grid-template-columns: 1fr 1fr;
+  }
 
+  .dinosaur.first {
+    grid-column: 1 / 3;
+  }
 
-    .dinosaur.first {
-        grid-column: 1 / 3;
-    }
+  header nav {
+    flex: 1;
+    display: block;
+    position: initial;
+    padding: 0;
+    padding-right: 20px;
+    font-size: 20px;
+    background-color: transparent;
+  }
 
-    header nav {
-        flex: 1;
-        display: block;
-        position: initial;
-        padding: 0;
-        padding-right: 20px;
-        font-size: 20px;
-        background-color: transparent;
-    }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    column-gap: 20px;
+    text-decoration: none;
+    color: inherit;
+    list-style-type: none;
+    flex-direction: row;
+  }
 
-    header nav ul {
-        width: 100%;
-        display: flex;
-        align-items: flex-end;
-        column-gap: 20px;
-        text-decoration: none;
-        color: inherit;
-        list-style-type: none;
-        flex-direction: row;
-    }
+  nav .link {
+    color: var(--white);
+  }
 
-    nav .link {
-        color: var(--white);
-    }
+  nav .link:hover {
+    color: var(--tertiary);
+  }
 
-    nav .link:hover {
-        color: var(--tertiary);
-    }
+  header nav ul li:first-of-type {
+    margin-left: 30px;
+  }
 
-    header nav ul li:first-of-type {
-        margin-left: 30px;
-    }
-
-    header label {
-        display: none;
-    }
+  header label {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .mobile {
-        display: none;
-    }
+  .mobile {
+    display: none;
+  }
 
-    .not-mobile {
-        display: grid;
-    }
+  .not-mobile {
+    display: grid;
+  }
 
-    .dinosaurs {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  .dinosaurs {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-    .dinosaur.first {
-        grid-column: 1 / 3;
-        grid-template-rows: 1fr;
-    }
+  .dinosaur.first {
+    grid-column: 1 / 3;
+    grid-template-rows: 1fr;
+  }
 
-    .dinosaur.first .info {
-        margin-top: -100px;
-        background: none;
-        z-index: 10;
-    }
+  .dinosaur.first .info {
+    margin-top: -100px;
+    background: none;
+    z-index: 10;
+  }
 
-    .dinosaur.first .info h2,
-    .dinosaur.first .info p {
-        color: var(--white);
-    }
+  .dinosaur.first .info h2,
+  .dinosaur.first .info p {
+    color: var(--white);
+  }
 
-    header nav {
-        flex: 1;
-        display: block;
-        position: initial;
-        padding: 0;
-        padding-right: 20px;
-        font-size: 20px;
-        background-color: transparent;
-    }
+  header nav {
+    flex: 1;
+    display: block;
+    position: initial;
+    padding: 0;
+    padding-right: 20px;
+    font-size: 20px;
+    background-color: transparent;
+  }
 
-    header nav a {
-        text-decoration: none;
-    }
+  header nav a {
+    text-decoration: none;
+  }
 
-    header nav ul {
-        width: 100%;
-        display: flex;
-        align-items: flex-end;
-        column-gap: 20px;
-        text-decoration: none;
-        color: inherit;
-        list-style-type: none;
-        flex-direction: row;
-    }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    column-gap: 20px;
+    text-decoration: none;
+    color: inherit;
+    list-style-type: none;
+    flex-direction: row;
+  }
 
-    nav .link {
-        color: var(--white);
-    }
+  nav .link {
+    color: var(--white);
+  }
 
-    nav .link:hover {
-        color: var(--tertiary);
-    }
+  nav .link:hover {
+    color: var(--tertiary);
+  }
 
-    header nav ul li:first-of-type {
-        margin-left: 30px;
-    }
+  header nav ul li:first-of-type {
+    margin-left: 30px;
+  }
 
-    header label {
-        display: none;
-    }
+  header label {
+    display: none;
+  }
 }
