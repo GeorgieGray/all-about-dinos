@@ -386,6 +386,8 @@ This content is not my own. All credit is given in the [Citations & Credits](#ci
   - https://www.visualcapitalist.com/incredible-map-of-pangea-with-modern-borders/
 - Thank you gif
   - https://giphy.com/stickers/yes-like-ok-iFUrMNDgeOq6lJxvAx
+- Dinosaur footprint icon
+  - https://www.freepik.com/free-icon/footprint_15001545.htm#query=dinosaur%20footprints&position=1&from_view=keyword
 #### Dinosaurs
 - Allosaurus
   - https://media.istockphoto.com/photos/three-allosauruses-picture-id1133035805?k=20&m=1133035805&s=612x612&w=0&h=cAryoeaa0fykg1BDD3Y4FOTWdJE5MoCh5QRkT6khvZ0=
