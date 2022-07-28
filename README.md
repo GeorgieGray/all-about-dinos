@@ -21,7 +21,7 @@ https://georgiegray.github.io/all-about-dinos/
 - [Project Requirements](#project-requirements)
   - [User Experience](#user-experience)
   - [Development](#development)
-  - [Deployment & Version Control](#deployment-version-control)
+  - [Deployment & Version Control](#deployment--version-control)
 - [Target Demographic](#target-demographic)
 - [User Stories](#user-stories)
 - [Features](#features)
@@ -41,7 +41,7 @@ https://georgiegray.github.io/all-about-dinos/
 - [Content](#content)
   - [Editorial](#editorial)
   - [Media](#media)
-- [Citations & Credits](#citations-credits)
+- [Citations & Credits](#citations--credits)
 
 
 ## Project Requirements
@@ -181,15 +181,23 @@ As the viewport size shrinks, the mosaic arranges itself to make best use of the
 
 ### Dinosaur Facts Newsletter
 
-TODO
+- Allows the user to sign-up to the dino facts newsletter
+- Every 2 weeks, the user will recieve new information via email
+- Secondary purpose is as a marketting aid, a newsletter reminds the user of the websites existence and may prompt them to return later
 
 #### Sign-up form
+- A small content area providing the user with context, it explains what the newsletter is and encourages the user to sign up
+- A form with three inputs: first name, second name, email.
+- A button to submit their details and sign up to the newsletter
 
-TODO
+![sign up](https://i.gyazo.com/ab0a8533c510dd7e732a28975f126170.png)
 
 #### Thank you page
+- A brief thank you message, I want the user to experience positive emotion after signing up for the newsletter
+- The page includes a pun and a playful image
+- The information presented on this page confirms with the user what action they have just undertaken, and what concequences the action will have
 
-TODO
+![thank-you](https://i.gyazo.com/fc214f4799575d3c4d4186cd1c70adf9.png)
 
 ## Technology
 
@@ -210,7 +218,7 @@ This folder contains two child folders:
 
 ### Page structure (HTML files)
 
-All HTML files live in a folder bearing the name of that page, the HTML files themselves and are named `index.html`. Most web servers understand `index.html` to be the default file to display when a folder is requested, and we can use this to our advantage to create more user-friendly URL structures without exposing technical details like the file type.
+All HTML files live in a folder bearing the name of that page, the HTML files themselves and are named `index.html`. Most web servers understand `index.html` to be the default file to display when a folder is requested, and I can use this to my advantage to create more user-friendly URL structures without exposing technical details like the file type.
 
 For example `/all-about-dinos/dinosaur.html` can instead be `/all-about-dinos/dinosaur`.
 
@@ -236,9 +244,9 @@ The individual profile page of a dinosaur.
 
 The form to sign up for the dino facts newsletter
 
-#### Facts newsletter thank you `/facts/thank-you.html`
+#### Facts newsletter thank you `/facts/thank-you`
 
-The thank you page for a new newsletter subscriber. This is the only exception to project structure, the forms `action` attribute must have the .html file extension for GitHub Pages throws a 405 error.
+The thank you page for a new newsletter subscriber.
 
 ## Design
 
@@ -291,9 +299,30 @@ https://github.com/GeorgieGray/all-about-dinos/actions
 
 ## Testing
 
-### Issues
+### Methodology
+
+1. Do each of the following actions using multiple browsers, namely: Chrome, Firefox, Safari, Edge
+    1. Visit every page on the website, scanning and visually check for abnormalities
+    2. Interact with every link and image on the website, confirm that they have loaded and are linking to the correct place. All images should have a descriptive alt attribute.
+    3. Confirm that as the website resizes between responsive breakpoints that the website continues to work as expected in a number of resolutions and viewport sizes. It's important to do this check as some users will not use the website with their browser window fully expanded. The website must support all window and viewport sizes between our defined breakpoints.
+    4. Check mobile viewport exclusive functionality such as the mobile navigation menu
+    5. Submit the newsletter form, and confirm that the navigation to the thank-you page works as expected.
+2. Using the chrome-dev-tools, emulate devices of various sizes and check for usability and styling abnormalities. 
+    - Large desktop
+    - Small desktop
+    - Tablet
+    - Large phone
+    - Small phone
+3. Review the dinosaur-specific profile content, confirm the correct content is displayed for each dinosaur.
+4. Confirm that the social-media links work as expected.
+5. Use the WebAIM Contrast Checker to validate that any new colours satisfy the accessibility contrast guidelines for WCAG AAA, across all text types.
+6. Run each page through the W3C HTML & CSS validators to confirm everything is compliant and implemented correctly.
+7. Run the Lighthouse performance, accessibility, best practice and SEO tests using the chrome-dev-tools.
+8. Each time a change is introduced or a bug is fixed, repeat this testing strategy.
 
 ### Third-party
+
+I've used a set of third-party testing utilities to check my conformance with the CSS and HTML specifications, and to test website performance.
 
 #### W3C HTML Valdiator
 Each page type has been validated using the W3C Nu HTML Checker. There are no errors, please find the results below.
@@ -302,9 +331,16 @@ Each page type has been validated using the W3C Nu HTML Checker. There are no er
 - Dinosaur index: https://validator.w3.org/nu/?doc=https%3A%2F%2Fgeorgiegray.github.io%2Fall-about-dinos%2Fdinosaur
 - Dinosaur profile: https://georgiegray.github.io/all-about-dinos/dinosaur/triceratops
 - Facts newsletter form: https://validator.w3.org/nu/?doc=https%3A%2F%2Fgeorgiegray.github.io%2Fall-about-dinos%2Ffacts%2F
-
+- Facts thank-you page: https://validator.w3.org/nu/?doc=https%3A%2F%2Fgeorgiegray.github.io%2Fall-about-dinos%2Ffacts%2Fthank-you
 
 #### W3C CSS Validator
+Each page type has been validated using the W3C CSS Validation Service. There are no errors, please find the results below.
+
+- Home: https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgeorgiegray.github.io%2Fall-about-dinos&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
+- Dinosaur index: https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgeorgiegray.github.io%2Fall-about-dinos%2Fdinosaur&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
+- Dinosaur profile: https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgeorgiegray.github.io%2Fall-about-dinos%2Fdinosaur%2Ftriceratops&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
+- Facts newsletter form: https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgeorgiegray.github.io%2Fall-about-dinos%2Ffacts&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
+- Facts thank-you page: https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgeorgiegray.github.io%2Fall-about-dinos%2Ffacts%2Fthank-you&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
 
 #### Lighthouse
 
@@ -322,6 +358,111 @@ Mobile has more strict thresholds since generally the devices are less powerful 
 
 ### Editorial
 
+All editorial content on the website is aimed at children with basic reading comprehension skills. The information is kept playful, fun and concise. All information is accompanied by a picture to provide additional context.
+
+This content is not my own, the majority of the content is borrowed from `https://kids.nationalgeographic.com/animals/prehistoric`. Where content wasn't available for a dinosaur I wanted to include in the website, it was constructed using a collection of different sources.
+
+All credit is given in the [Citations & Credits](#citations--credits) section.
+
 ### Media
+When choosing media for the website, I looked for images which satisifed the following criteria:
+- Hisorically accurate
+- Not scary: dinosaurs can be violent creatures, but I didn't want this to deter children from learning about them
+- Shows dinosaurs in their natural habitat: dinosaurs are often shown in museums, as fossils and fictionally in non-natural locations. I wanted to avoid these types of images to better represent the dinosaurs as they lived at the time of their existance.
+- Illustrutive art style where possible, rather than photo-realistic - but still anatomically accurate.
+- Colourful & bright
+- Non-violent
+- Consistent in style
+
+This content is not my own. All credit is given in the [Citations & Credits](#citations--credits) section.
 
 ## Citations & Credits
+
+### Images
+#### Misc
+- Logo
+  - https://www.shutterstock.com/image-vector/dinosaur-excavation-icon-400145854?src=1Ra90Xhl2EJ-RK4LWKCXkw-3-46
+- Map of Pangea
+  - https://www.visualcapitalist.com/incredible-map-of-pangea-with-modern-borders/
+- Thank you gif
+  - https://giphy.com/stickers/yes-like-ok-iFUrMNDgeOq6lJxvAx
+#### Dinosaurs
+- Allosaurus
+  - https://media.istockphoto.com/photos/three-allosauruses-picture-id1133035805?k=20&m=1133035805&s=612x612&w=0&h=cAryoeaa0fykg1BDD3Y4FOTWdJE5MoCh5QRkT6khvZ0=
+- Apatosaurus
+  - https://www.fanpop.com/clubs/jurassic-park/picks/show/1662466/brachiosaurus-apatosaurus
+- Ankylosaurus
+  - https://media.kidadl.com/Did_You_Know_21_Incredible_Ankylosaurus_Facts_8dacbb4e54.jpg
+- Anchisuarus
+  - https://elenarts.ch/wp-content/uploads/2017/10/dino_anchisaurus_eat_cycad_reddeser_stand_logo_blog.jpg                
+- Brontosaurus
+  - https://www.istockphoto.com/photos/brontosaurus 
+- Dracorex
+  - https://i.pinimg.com/736x/8f/25/01/8f2501f2170f62bbd052efa194df8457.jpg
+- Iguanodon
+  - https://media.sciencephoto.com/image/c0513579/400wm
+- Microraptor
+  - https://bioweb.ie/wp-content/uploads/2021/09/microraptor.jpg
+- Parasaurolophus
+  - https://media.istockphoto.com/photos/parasaurolophus-from-the-cretaceous-era-3d-illustration-picture-id1371472391?k=20&m=1371472391&s=612x612&w=0&h=Yx_k8r5Xmt4vfwHUrmw2ggYohkk-zaLlMT-vBcREzgQ=
+- Spinosaurus
+  - https://c.files.bbci.co.uk/A139/production/_123837214_mediaitem123834363.jpg
+- Stegosaurus
+  - https://a-z-animals.com/media/2022/05/shutterstock_1472824661-e1652108149403.jpg
+- Triceratops
+  - https://scx2.b-cdn.net/gfx/news/2021/new-lost-relative-of-t.jpg
+- Tyrannosaurus Rex
+  - https://scitechdaily.com/images/Tyrannosaurus-rex-Dinosaur.jpg
+- Velociraptor
+  - https://www.thoughtco.com/thmb/-OCOhKtVjpv4z5ayWYI7GbW2Zf0=/1500x1500/smart/filters:no_upscale()/a-pair-of-velociraptors-patrol-the-shore-of-an-ancient-lake-looking-for-their-next-meal--168839744-5c842ae746e0fb0001431998.jpg
+- Wooly Mammoth
+  - https://news.berkeley.edu/wp-content/uploads/2022/03/Woolly-Mammoth-750.jpg
+
+### Content
+#### Video
+- The Day the Dinosaurs Died - Minute by Minute by Kurzgesagt
+  - https://www.youtube.com/watch?v=dFCbJmgeHmA
+
+#### Editorial
+- Types of dinosaurs
+  - https://www.factsjustforkids.com/dinosaur-facts/types-of-dinosaurs-for-kids/
+- When did they exist
+  - https://www.livescience.com/3945-history-dinosaurs.html
+- Triassic era
+  - Ogg, James G.; Ogg, Gabi M.; Gradstein, Felix M. (2016). "Triassic". A Concise Geologic Time Scale: 2016. Elsevier. pp. 133–49. ISBN 978-0-444-63771-0./
+  - https://en.wikipedia.org/wiki/Triassic
+  -  "Triassic". Dictionary.com Unabridged (Online). n.d.
+- Jurassic era
+  - "Jurassic". Lexico Dictionaries. Retrieved 2021-01-09.
+  - https://en.wikipedia.org/wiki/Jurassic
+- Cretaceous era
+  - https://en.wikipedia.org/wiki/Cretaceous
+- Where did they live
+  - https://www.usgs.gov/faqs/where-did-dinosaurs-live#:~:text=Dinosaurs%20lived%20on%20all%20of,this%20supercontinent%20slowly%20broke%20apart.
+- Tyrannosaurus Rex
+  - https://kids.nationalgeographic.com/animals/prehistoric/facts/tyrannosaurus-rex
+- Allosaurus
+  - https://kids.nationalgeographic.com/animals/prehistoric/facts/allosaurus
+- Anchisaurus
+  - https://paleo-media.fandom.com/wiki/Anchisaurus
+  - https://en.wikipedia.org/wiki/Anchisaurus
+- Apatosaurus
+  - https://kids.nationalgeographic.com/animals/prehistoric/facts/apatosaurus
+- Brontosaurus
+  - https://kids.kiddle.co/Brontosaurus
+- Dracorex
+  - https://kids.nationalgeographic.com/animals/prehistoric/facts/dracorex
+- Iguanodon
+  - https://kids.nationalgeographic.com/animals/prehistoric/facts/iguanodon
+- Microraptor
+  - https://kids.nationalgeographic.com/animals/prehistoric/facts/microraptor
+- Parasaurolophus
+  - https://kids.nationalgeographic.com/animals/prehistoric/facts/parasaurolophus
+- Spinosaurus
+  - https://kids.nationalgeographic.com/animals/prehistoric/facts/spinosaurus
+- Triceratops
+  - https://kids.nationalgeographic.com/animals/prehistoric/facts/triceratops
+- Velociraptor
+  - https://kids.nationalgeographic.com/animals/prehistoric/facts/velociraptor
+- Woolly Mammoth
+  - https://kids.nationalgeographic.com/animals/prehistoric/facts/woolly-mammoth
