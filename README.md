@@ -12,7 +12,7 @@ The website consists of four main areas:
 - The dinosaur profile page(s)
 - The dino facts newsletter
 
-There are 18 pages in total, including 15 dinosaur profiles.
+There are 19 pages in total, including 15 dinosaur profiles.
 
 The website is hosted using GitHub Pages, see it here:  
 https://georgiegray.github.io/all-about-dinos/
