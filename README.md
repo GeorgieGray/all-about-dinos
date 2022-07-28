@@ -28,7 +28,7 @@ https://georgiegray.github.io/all-about-dinos/
 - [Technology](#technology)
 - [Project Structure](#project-structure)
 - [Design](#design)
-  - [Colour Pallette](#colour-pallette)
+  - [Colour Palette](#colour-palette)
   - [Typography](#typography)
 - [Local Development](#local-development)
 - [Deployment](#deployment)
@@ -250,13 +250,13 @@ The thank you page for a new newsletter subscriber.
 
 ## Design
 
-### Colour Pallette
+### Colour Palette
 
 Green is a thematic colour for dinosaurs. You will often see in media related to dinosaurs an abundance of green due to the fauna and overgrowth of the environments they inhabited. The shades of green were selected with the intention of adding flavour without distracting from the content.
 
-The tertiary colour is not green, but instead is complimentary to the other colours in the pallette. It pops when placed with them as the background.
+The tertiary colour is not green, but instead is complimentary to the other colours in the palette. It pops when placed with them as the background.
 
-![pallette](https://i.imgur.com/o3pAJEh.png)
+![palette](https://i.imgur.com/o3pAJEh.png)
 
 ### Typography
 
